@@ -1,0 +1,67 @@
+---
+title: "Exercise 15.1"
+output: html_document
+date: "2023-04-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Number 1
+
+A machine produces memory sticks of varying lengths, distributed uniformly between 2 and 12 mm. Memory sticks longer than 10 mm do not meet the design criterion, and must be scrapped.
+
+(a) Calculate the probability that a memory stick will be scrapped.
+
+```{r}
+a = 2 
+b = 12
+
+scrap <- 2/(b-a)
+scrap
+
+```
+
+(b) Simulate 50 memory stick lengths and obtain a histogram of the simulated values. Calculate the simulated mean and variance
+
+```{r}
+simulate = runif(50, 2, 12)
+round(simulate,3)
+
+mean(simulate)
+
+var(simulate)
+
+hist(simulate, main="Memory stick lengths")
+```
+
+## Number 2
+
+Students in an electronic engineering laboratory measure current in using an ammeter. Due to several random factors, the measurement X follows the pdf
+
+
+(a) Show that, for this to be a genuine probability density, b = 0.15.
+
+```{r}
+
+```
+(b) Find the probability that the measurement of the current exceeds 3 A.
+
+```{r}
+
+```
+(c) Find E(X).
+
+```{r}
+
+```
+
+
+## Number 3
+
+In a radio communications system, the phase difference X between the transmitter and receiver is modeled as having a uniform density in [−𝜋,𝜋],[−𝜋,+𝜋]. Find P(X ≤ 0) and P(X ≤ 𝜋∕2)
+
+```{r}
+
+```
